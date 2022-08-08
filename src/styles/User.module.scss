@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 450ms ease;
+
+  .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+
+  .placeholder {
+    height: 32px;
+    width: 32px;
+    background-color: #262726;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  p {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    background-color: #31303086;
+  }
+}

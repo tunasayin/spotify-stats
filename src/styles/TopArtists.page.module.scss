@@ -1,0 +1,61 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.hero {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 15px;
+  margin-bottom: 85px;
+
+  .inner {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .sortSelector {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .artists {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      > * {
+        opacity: 0;
+        animation: fadeIn 500ms forwards;
+      }
+
+      @for $i from 1 through 50 {
+        *:nth-child(#{$i}n) {
+          animation-delay: #{$i * 75}ms;
+        }
+      }
+    }
+  }
+}

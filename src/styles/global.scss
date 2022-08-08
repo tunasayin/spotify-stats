@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+  color: #e0dfdf;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.btn {
+  background-color: #1b7054;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  transition: color 500ms ease;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #25926e;
+  }
+}
+
+.gradient {
+  background: linear-gradient(130deg, #25d125, #2b9e81);
+  color: black;
+
+  &:hover {
+    color: white;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+  .scrollDisabled {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+select {
+  background-color: #0e0d0d;
+  border: 1px solid transparent;
+  color: #cecdcd;
+  text-transform: capitalize;
+  padding: 2px 4px;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 400ms ease;
+
+  &:focus {
+    border-color: #25d125;
+  }
+}
