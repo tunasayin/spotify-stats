@@ -14,7 +14,7 @@ import Cookies from "js-cookie";
 const App: FC = () => {
   const user = useContext(UserContext);
   const clientId = "f685a0b84ce54f2a8ef306a9a2746a70";
-  const redirectUri = "https://spotifystats.tech/#/callback/";
+  const redirectUri = "https://spotifystats.tech/callback/";
 
   useEffect(() => {
     if (!user?.id) user?.GetUser();
