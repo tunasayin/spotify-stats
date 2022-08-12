@@ -33,7 +33,7 @@ const App: FC = () => {
           path="/login"
           element={
             <Redirect
-              target={`https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${redirectUri}&scope=user-read-recently-played user-read-playback-position user-top-read`}
+              target={`https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${redirectUri}&scope=user-read-recently-played user-top-read`}
               wait={300}
               text="Redirecting you to Spotify"
               agressive
